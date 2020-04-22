@@ -1,54 +1,57 @@
 .header {
     overflow: hidden;
     padding: 0px 10px;
-    border-bottom: 5px solid #666;
-}
-  
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 0px;
+    border-bottom: 5px solid #350000;
+    background-color: #FFF;
+    height: 110px;
 }
 
+body { margin:0px; }
+  
+
   .header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+    scale: 138%;
+    margin: 23px 52px 0px;
+    float: left;
+    padding: 12px;
 }
 
 
 .header-right a {
   float: left;
-  font-size: 16px;
+  font-size: 17px;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border: 1px solid #d0cece;
+border-radius: 4px;
+background-color: #eaeaea;
+font-family: verdana;
 }
 
 .header-right-dropdown {
   float: left;
   overflow: hidden;
+  border: 1px solid #d0cece;
+  border-radius: 4px;
+  background-color: #eaeaea;
 }
 
 
 .header-right-dropdown .dropbtn{
-  font-size: 16px;
+  font-size: 17px;
   border: none;
   outline: none;
   color: black;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: verdana;
   margin: 0;
 }
 
 .header-right a:hover, .header-right-dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #c5c6c5;
 }
 
 .header-right-dropdown-content {
@@ -82,29 +85,42 @@
     color: white;
   }
   
+  .active-btn {
+    background-color: #666;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    font-family: inherit;
+    margin: 0;
+  }
   
   .header-right {
     float: right;
-    margin-top: 25px;
+    margin-top: 62px;;
   }
 
   .welcome-text {
     height: 200px;
-    background-color: antiquewhite;
   }
 
   .welcome-text .text-greetings{
-    margin: auto;
-    width: 60%;
-    font-size: 25px;
+    margin: 50px auto;
+    width: 70%;
+    font-size: 22px;
     text-align: center;
     padding: 10px;
+    background-color: #b7b440;
+    border-radius: 10px;
+    font-family: verdana;
 }
 
 .store-layout {
-    margin: 50px;
-    border: 10px solid burlywood;
+    margin: 0px 50px 50px;
+    border: 10px solid #fff;
     border-radius: 12px;
+    box-shadow: 9px 9px 11px #353535;
 }
 
 .store-layout-top {
@@ -114,13 +130,14 @@
 }
 
 .store-layout-text {
-  border: 1px solid burlywood;
-  background-color: burlywood;
+  border: 1px solid #fff;
+  background-color: #fff;
 }
 
 .store-layout-text h2{
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  font-family: verdana;
 }
 
 .store-layout-top .exit{
@@ -132,8 +149,12 @@
 
 .store-layout-top .qc {
     width: 100%;
-    background-color: aquamarine;
+    background-color: #c5c6c5;
     height: 400px;
+}
+
+.store-layout-top .qc:hover {
+  box-shadow: -7px -4px 8px #353535;
 }
 
 .store-layout-top .qc a{
@@ -142,19 +163,24 @@
   font-size: 55px;
   text-align: center;
   text-decoration: none;
+  font-family: verdana;
 }
 
 .store-layout-top .direction {
   position: absolute;
-  margin-left: 1086px;
-  margin-top: 16px;
-  scale: 119%;
+  margin-left: 83%;
+  margin-top: -86px;
+  scale: 100%;
 }
 
 .store-layout-top .tp {
     width: 100%;
-    background-color: rgb(173, 126, 50);
+    background-color: rgb(234, 234, 234);
     height: 400px;
+}
+
+.store-layout-top .tp:hover {
+  box-shadow: 7px -4px 8px #353535;
 }
 
 .store-layout-top .tp a{
@@ -163,6 +189,12 @@
   font-size: 55px;
   text-align: center;
   text-decoration: none;
+  font-family: verdana;
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 .store-layout-bottom{
@@ -172,7 +204,7 @@
 
 .store-layout-bottom .fd {
     width: 100%;
-    background-color: rgb(173, 126, 50);
+    background-color: rgb(234, 234, 234);
     height: 400px;
 }
 
@@ -182,13 +214,18 @@
   font-size: 55px;
   text-align: center;
   text-decoration: none;
+  font-family: verdana;
   
 }
 
 .store-layout-bottom .kites {
     width: 100%;
-    background-color: aquamarine;
+    background-color: #c5c6c5;
     height: 400px;
+}
+
+.store-layout-bottom .kites:hover {
+  box-shadow: 7px 4px 8px #353535;
 }
 
 .store-layout-bottom .entrance{
@@ -204,23 +241,26 @@
   font-size: 55px;
   text-align: center;
   text-decoration: none;
+  font-family: verdana;
 }
 
 .footer {
   position: absolute;
-    width: 100%;
-    right: 0;
-    bottom: revert;
-    left: 0;
-    color: #FFD740; 
-    background-color: #424242;
-    clear: both;
-    display: flex;
+  width: 100%;
+  right: 0;
+  bottom: revert;
+  left: 0;
+  color: #f2f3f3;
+  background-color: #242729;
+  clear: both;
+  display: flex;
 }
 
 .footer-address {
   padding: 30px;
   flex-grow: 1;
+  font-family: verdana;
+  width: 25%;
 }
 
 .footer-address p{
@@ -233,6 +273,7 @@
   flex-grow: 1;
   padding: 30px;
   width: 20%;
+  font-family: verdana;
 }
 
 .footer-sitemap a{
@@ -258,13 +299,30 @@ Product list CSS Start here
 */
 
 .container {
-  background: aquamarine;
+  background: #DCD94E;
   display: inline-block;
+  width: 100%;
 
 }
 
 .page-title{
   margin: 0px 75px auto;
+  color: #3e3e3e;
+  font-family: verdana;
+}
+
+.page-title-about-us{
+  margin: 20px 50px auto;
+  color: #3e3e3e;
+  font-family: verdana;
+  flex-grow: 1;
+  width: 58%;
+  text-align: justify;
+  background-color: #FFFFFFE6;;
+  padding: 15px;
+  line-height: 36px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px #353535;
 }
 
 .page-title h1{
@@ -273,8 +331,11 @@ Product list CSS Start here
 .product-view {
   overflow: auto;
   margin: 0px 75px 40px;
-  border: 5px solid antiquewhite;
   margin-right: 75px;
+  margin-right: 75px;
+  border-radius: 10px;
+  background-color: #FFFFFFE6;
+  box-shadow: 5px 5px 8px #353535;
 }
 
 .product-image {
@@ -290,4 +351,62 @@ Product list CSS Start here
   padding: 20px;
   text-align: justify;
   font-size: 20px;
+  line-height: 35px;
+  font-family: verdana;
+  padding-right: 30px;
 }
+
+.page-title-about-us p{
+  font-size: 17px;
+
+}
+.about-image img{
+  width: 100%;
+  margin: 20px 20px auto;
+  border-radius: 10px;
+}
+
+.about-text {
+  padding:20px;
+}
+
+.about-info {
+  display: flex;
+  height: 700px;
+}
+.about-text p{
+  text-align: justify;
+  font-size: 20px;
+}
+
+.business-info {
+  display: flex;
+  margin: 50px 75px 200px;
+}
+
+.business-image {
+  flex-grow: 1;
+}
+
+.business-text{
+  flex-grow: 1;  
+}
+
+.business-text table, td, th {  
+  text-align: left;
+  font-size: 24.3px;
+  background-color: #eaeaea;
+  box-shadow: 3px 2px 7px #353535;
+  border-radius: 6px;
+  font-family: verdana;
+}
+
+.business-text table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.business-text th, td {
+  padding: 15px;
+}
+
